@@ -1,0 +1,16 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "providers": [
+        "python"
+      ]
+    }
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "startCommand": "python bot.py",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}
