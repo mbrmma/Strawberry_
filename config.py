@@ -2,7 +2,7 @@ import os
 import json
 
 # Telegram bot token
-BOT_TOKEN = os.getenv("BOT_TOKEN", "PUT_YOUR_BOT_TOKEN_HERE")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7250624876:AAH_aUIZSchx_Oj3uHhIGforSLPsHUqEsjY")
 
 # Admin chat ID (your Telegram numeric ID) to receive new orders
 # Tip: send /id to the bot after start; you'll get your chat id in logs/admin once implemented.
