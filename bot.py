@@ -17,7 +17,13 @@ import config
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("strawberry_bot")
 
-bot = Bot(token=config.BOT_TOKEN, parse_mode="HTML")
+from aiogram import Bot
+from aiogram.client.default import DefaultBotProperties
+
+bot = Bot(
+    token=TOKEN,
+    default=DefaultBotProperties(parse_mode="HTML")
+)
 dp = Dispatcher()
 router = Router()
 dp.include_router(router)
