@@ -6,10 +6,10 @@ BOT_TOKEN = ("7250624876:AAH_aUIZSchx_Oj3uHhIGforSLPsHUqEsjY")
 
 # Admin chat ID (your Telegram numeric ID) to receive new orders
 # Tip: send /id to the bot after start; you'll get your chat id in logs/admin once implemented.
-ADMIN_CHAT_ID = int(os.getenv("2107362512"))  # set to your ID
+ADMIN_CHAT_ID = 2107362512 # set to your ID
 
 # City name for messages
-CITY = os.getenv("Красноярск")
+CITY = Красноярск
 
 # Price config: sizes (kg) -> price per kg or per package depending on 'PRICE_MODE'
 # Use JSON in env PRICES_JSON='{"0.5": 4.0, "1": 7.5, "2": 14.0}'
