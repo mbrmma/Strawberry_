@@ -9,7 +9,7 @@ BOT_TOKEN = ("7250624876:AAH_aUIZSchx_Oj3uHhIGforSLPsHUqEsjY")
 ADMIN_CHAT_ID = 2107362512 # set to your ID
 
 # City name for messages
-CITY = Красноярск
+CITY = "Красноярск"
 
 # Price config: sizes (kg) -> price per kg or per package depending on 'PRICE_MODE'
 # Use JSON in env PRICES_JSON='{"0.5": 4.0, "1": 7.5, "2": 14.0}'
