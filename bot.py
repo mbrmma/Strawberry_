@@ -159,6 +159,8 @@ async def menu(m: Message, state: FSMContext):
 
 @router.callback_query(F.data.startswith("size:"))
 async def choose_size(c: CallbackQuery, state: FSMContext):
+    await c.answer()  # ← ВСТАВЬ СЮДА
+
     size = float(c.data.split(":")[1])
     order = user_orders.get(c.from_user.id) or Order(user_id=c.from_user.id, username=c.from_user.username)
     order.size_kg = size
