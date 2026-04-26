@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Клубника</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header class="hero">
+      <div>
+        <h1>Свежая клубника 🍓</h1>
+        <p>Сочная, сладкая, свежая доставка</p>
+      </div>
+    </header>
+
+    <section class="banner">
+      <h2>Клубника отборная</h2>
+      <p>Выберите фасовку и оформите заказ</p>
+    </section>
+
+    <section class="products">
+      <div class="card" onclick="addToCart('0,5 кг', 500)">
+        <div class="emoji">🍓</div>
+        <h3>0,5 кг</h3>
+        <p>500 ₽</p>
+        <button>В корзину</button>
+      </div>
+
+      <div class="card" onclick="addToCart('1 кг', 1000)">
+        <div class="emoji">🍓</div>
+        <h3>1 кг</h3>
+        <p>1000 ₽</p>
+        <button>В корзину</button>
+      </div>
+
+      <div class="card" onclick="addToCart('1,5 кг', 1500)">
+        <div class="emoji">🍓</div>
+        <h3>1,5 кг</h3>
+        <p>1500 ₽</p>
+        <button>В корзину</button>
+      </div>
+
+      <div class="card" onclick="addToCart('2 кг', 2000)">
+        <div class="emoji">🍓</div>
+        <h3>2 кг</h3>
+        <p>2000 ₽</p>
+        <button>В корзину</button>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Корзина</h2>
+      <div id="cartList">Пока пусто</div>
+      <h3 id="total">Итого: 0 ₽</h3>
+
+      <input id="name" placeholder="Ваше имя" />
+      <input id="phone" placeholder="Телефон" />
+      <input id="address" placeholder="Адрес доставки" />
+
+      <button class="order-btn" onclick="sendOrder()">Оформить заказ</button>
+    </section>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
